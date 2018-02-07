@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="./style.css" type="text/css">
+  </head>
+  <body>
+  	<header>
+  		<h1>Rock! Paper! Scissors!</h1>
+  	</header>
+	
+	<div id="main_content">
+	  	<h3>Victory goes to the first player with 5 wins</h3>
+
+	  	<div id="rps_choices">
+	  		<button id="rock_button" class="rps_button">
+	  			<img id="rock_img" class="rps_img" src="./icons/Rock.png">
+	  			<p class="rps_label">Rock</p>
+	  		</button>
+	  		<button id="paper_button" class="rps_button">
+				<img id="paper_img" class="rps_img" src="./icons/Paper.png">
+	  			<p class="rps_label">Paper</p>
+	  		</button>
+	  		<button id="scissors_button" class="rps_button">
+				<img id="scissors_img" class="rps_img" src="./icons/Scissors.png">
+	  			<p class="rps_label">Scissors</p>
+	  		</button>
+	  	</div>
+
+		<div id="choice_area">
+			<div id="player_area"></div>
+			<div id="computer_area"></div>
+		</div>
+		
+		<div id="results_area">
+			<h2 id="result_text">Click on a button to make your choice</h2>
+			<h2 id="score_text"></h2>
+		</div>
+
+		<div id="final_area">
+			<h1 id="winlose_text"></h1>
+			<h2 id="refresh_text"></h2>
+		</div>
+		
+		<script src="script.js"></script>
+	</div>
+  </body>
+</html>

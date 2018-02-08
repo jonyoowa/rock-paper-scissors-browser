@@ -1,5 +1,4 @@
- 
-* {
+ * {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -7,11 +6,6 @@
 	font: inherit;
 	vertical-align: baseline;
 }
-
-html {
-	
-}
-
 
 body {
 	font-family: Roboto, Times New Roman, sans-serif;
@@ -40,18 +34,9 @@ h2 {
 	margin-top, margin-bottom: 1em;
 }
 
-#main_content {
-
-}
-
 h3 {
 	font-size: 18px;
 	margin-top: 1em;
-}
-
-
-#rps_choices {
-
 }
 
 .rps_button {
@@ -79,18 +64,6 @@ h3 {
 	background-color: #FFFC50;
 }
 
-#rock_img {
-
-}
-
-#paper_img {
-
-}
-
-#scissors_img {
-
-}
-
 .rps_img {
 	height: 30%;
 	width: 30%;
@@ -103,25 +76,11 @@ h3 {
 	margin-top: 8px;
 }
 
-#choice_area {
-
-}
-
-#player_area {
-
-}
-
-#computer_area {
-
-}
-
 #results_area {
 	margin-top: -50px;
 }
 
-#result_text {
 
-}
 
 
 

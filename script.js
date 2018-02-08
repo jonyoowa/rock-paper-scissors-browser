@@ -54,7 +54,6 @@ function playRound(playerChoice) {
 				refresh_text.innerHTML = "Something went wrong...";
 			}
 
-			//removeButtonFunctionality();
 			playerWins, computerWins, ties = 0;
 			revealRestartButton();
 			removeButtonFunctionality();
@@ -111,6 +110,7 @@ function playRound(playerChoice) {
 
 // UI Control Functionality
 function addButtonFunctionality() {
+	let angle = 0;
 	activateEffects();
 
 	rock.addEventListener("click", function() { playRound("rock"); });
@@ -123,9 +123,11 @@ function addButtonFunctionality() {
 		for (let i = 0; i < rps_button.length; ++i) {
 			rps_button[i].addEventListener("mousemove", function() { this.style.opacity = 0.5; });
 			rps_button[i].addEventListener("mouseleave", function() { this.style.opacity = 1.0; });
+
 			rps_button[i].onclick = function() {
 				this.style.transition = "all 0.5s ease-in-out";
-				this.style.transform = "rotate(360deg)";
+				angle += 360;
+				this.style.transform = "rotate("+angle+"deg)";
 			}
 		}
 	}
